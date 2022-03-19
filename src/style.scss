@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  width: 100vw;
+
+  /* Side-bar and Main content */
+  * {
+    border: 1px solid black;
+  }
+}
+
+.side-bar {
+  height: 100vh; 
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+
+  .top-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 3fr 2fr;  
+  * {
+    border: 1px solid black;
+  }
+  .project-container {
+    grid-row: 1 / -1;
+  }
+}
