@@ -9,53 +9,164 @@
 <body>
   <div class='side-bar'>
     <div class='logo'>
-      <img class='logo-img'>
-      <a href='#'>Dashboard</a>
+      <img src="<%=require('./assets/img/logo.png')%>" class='logo-img icon'>
+      <a class='logo-text bold-text' href='#'>Dashboard</a>
     </div>
     <nav class='nav-bar'>
-      <div class='home'>Home</div>
-      <div class='profile'>Profile</div>
-      <div class='message'>Messages</div>
-      <div class='history'>History</div>
-      <div class='tasks'>Tasks</div>
+      <button class='home'><img class='icon' src="<%=require('./assets/img/home.png')%>">Home</button>
+      <button class='profile'><img class='icon' src="<%=require('./assets/img/profile.png')%>">Profile</button>
+      <button class='message'><img class='icon' src="<%=require('./assets/img/message.png')%>">Messages</button>
+      <button class='history'><img class='icon' src="<%=require('./assets/img/history.png')%>">History</button>
+      <button class='tasks'><img class='icon' src="<%=require('./assets/img/tasks.png')%>">Tasks</button>
+      <button class='communities'><img class='icon' src="<%=require('./assets/img/communities.png')%>">Communities</button>
     </nav>
     <nav class='sub-nav-bar'>
-      <div class='settings'>Tasks</div>
-      <div class='supports'>Supports</div>
-      <div class='privacy'>Privacy</div>
+      <button class='settings'><img class='icon' src="<%=require('./assets/img/setting.png')%>">settings</button>
+      <button class='supports'><img class='icon' src="<%=require('./assets/img/question.png')%>">Supports</button>
+      <button class='privacy'><img class='icon' src="<%=require('./assets/img/privacy.png')%>">Privacy</button>
     </nav>
   </div>
   <main class='main-content'>
     <header class='top-header'>
       <div class='search-container'>
-        <button class='icon'><img src=''></button>
+        <button class='search-btn'><img src="<%=require('./assets/img/search.png')%>" class='icon'></button>
         <input type='search' class='search-bar'>
       </div>
       <div class='profile-container'>
-        <button class='icon'><img src=''></button>
-        <img src=''>
-        <p class='name'></p>
+        <button><img class='icon' src="<%=require('./assets/img/bell.png')%>"></button>
+        <img class='small-profile' src="<%=require('./assets/img/profile.jpg')%>">
+        <p class='bold-text'>Morgan Oakley</p>
       </div>
       <div class='intro-container'>
-        <img src=''>
-        <p class='bold-text'>Hi there,</p>
-        <p class='name'>Morgan Oakley (@morgan)</p>
+        <img class='large-profile' src="<%=require('./assets/img/profile.jpg')%>">
+        <p class='title'>Hi there,</p>
+        <p class='bold-text'>Morgan Oakley (@morgan)</p>
       </div>
       <div class='btn-container'>
-        <button class='btn'>New</button>
-        <button class='btn'>Upload</button>
-        <button class='btn'>Share</button>
+        <button class='btn title'>New</button>
+        <button class='btn title'>Upload</button>
+        <button class='btn title'>Share</button>
       </div>
     </header>
     <div class='content-container'>
       <div class='project-container'>
-
+        <p class='bold-text'>Your projects</p>
+        <div class='grid-project'>
+          <div class='grid-box'>
+            <h2 class='bold-text'>Super Cool Project</h2>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec.</p>
+            <div class='util'>
+              <img class='icon' src="<%=require('./assets/img/star.png')%>">
+              <img class='icon' src="<%=require('./assets/img/eyes.png')%>">
+              <img class='icon' src="<%=require('./assets/img/share.png')%>">
+            </div> 
+          </div>
+          <div class='grid-box'>
+            <h2 class='bold-text'>Super Cool Project</h2>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec.</p>
+            <div class='util'>
+              <img class='icon' src="<%=require('./assets/img/star.png')%>">
+              <img class='icon' src="<%=require('./assets/img/eyes.png')%>">
+              <img class='icon' src="<%=require('./assets/img/share.png')%>">
+            </div> 
+          </div>
+          <div class='grid-box'>
+            <h2 class='bold-text'>Super Cool Project</h2>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec.</p>
+            <div class='util'>
+              <img class='icon' src="<%=require('./assets/img/star.png')%>">
+              <img class='icon' src="<%=require('./assets/img/eyes.png')%>">
+              <img class='icon' src="<%=require('./assets/img/share.png')%>">
+            </div> 
+          </div>
+          <div class='grid-box'>
+            <h2 class='bold-text'>Super Cool Project</h2>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec.</p>
+            <div class='util'>
+              <img class='icon' src="<%=require('./assets/img/star.png')%>">
+              <img class='icon' src="<%=require('./assets/img/eyes.png')%>">
+              <img class='icon' src="<%=require('./assets/img/share.png')%>">
+            </div> 
+          </div>
+          <div class='grid-box'>
+            <h2 class='bold-text'>Super Cool Project</h2>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec.</p>
+            <div class='util'>
+              <img class='icon' src="<%=require('./assets/img/star.png')%>">
+              <img class='icon' src="<%=require('./assets/img/eyes.png')%>">
+              <img class='icon' src="<%=require('./assets/img/share.png')%>">
+            </div> 
+          </div>
+          <div class='grid-box'>
+            <h2 class='bold-text'>Super Cool Project</h2>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec.</p>
+            <div class='util'>
+              <img class='icon' src="<%=require('./assets/img/star.png')%>">
+              <img class='icon' src="<%=require('./assets/img/eyes.png')%>">
+              <img class='icon' src="<%=require('./assets/img/share.png')%>">
+            </div> 
+          </div>
+          <div class='grid-box'>
+            <h2 class='bold-text'>Super Cool Project</h2>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec.</p>
+            <div class='util'>
+              <img class='icon' src="<%=require('./assets/img/star.png')%>">
+              <img class='icon' src="<%=require('./assets/img/eyes.png')%>">
+              <img class='icon' src="<%=require('./assets/img/share.png')%>">
+            </div> 
+          </div>
+          <div class='grid-box'>
+            <h2 class='bold-text'>Super Cool Project</h2>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec.</p>
+            <div class='util'>
+              <img class='icon' src="<%=require('./assets/img/star.png')%>">
+              <img class='icon' src="<%=require('./assets/img/eyes.png')%>">
+              <img class='icon' src="<%=require('./assets/img/share.png')%>">
+            </div> 
+          </div>
+        </div>
       </div>
       <div class='announce-container'>
-
+        <p class='bold-text'>Announcements</p>
+        <div class='announce-grid'>
+          <div class='announce-box'>
+            <p class='bold-text'>Site Maintenance</p>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec. id facillis fellis accumsan nec.</p>
+          </div>
+          <div class='announce-box'>
+            <p class='bold-text'>Site Maintenance</p>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec. id facillis fellis accumsan nec.</p>
+          </div>
+          <div class='announce-box'>
+            <p class='bold-text'>Site Maintenance</p>
+            <p class='text'>Sed Tempus ut lacus ut secelerisque. Suspendisse sollicitudin nibh erat, id facillis fellis accumsan nec. id facillis fellis accumsan nec.</p>
+          </div>
+        </div>
       </div>
       <div class='trend-container'>
-        
+        <p class='bold-text'>Trending</p>
+        <div class='trend-grid'>
+            <div class='trend-box'>
+              <img class='small-profile' src="<%=require('./assets/img/profile.jpg')%>">
+              <p class='text'>@chheang</p>
+              <p class='text'>World Peace Builder</p>
+            </div>
+            <div class='trend-box'>
+              <img class='small-profile' src="<%=require('./assets/img/profile.jpg')%>">
+              <p class='text'>@chheang</p>
+              <p class='text'>World Peace Builder</p>
+            </div>
+            <div class='trend-box'>
+              <img class='small-profile' src="<%=require('./assets/img/profile.jpg')%>">
+              <p class='text'>@chheang</p>
+              <p class='text'>World Peace Builder</p>
+            </div>
+            <div class='trend-box'>
+              <img class='small-profile' src="<%=require('./assets/img/profile.jpg')%>">
+              <p class='text'>@chheang</p>
+              <p class='text'>World Peace Builder</p>
+            </div>
+        </div>
       </div>
     </div>
   </main>
